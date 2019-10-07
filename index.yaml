@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  servicex:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2019-10-06T20:20:30.612305-05:00"
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: dbf87ff4f4905441cd5c840bbc2dfcc1bd7db0609a410025090d926878d049fe
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-0.1.0.tgz
+    version: 0.1.0
+generated: "2019-10-06T20:20:30.598795-05:00"
