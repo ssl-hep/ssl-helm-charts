@@ -3,11 +3,44 @@ entries:
   servicex:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-10-06T20:20:30.612305-05:00"
+    created: "2020-01-15T16:32:58.144759-06:00"
+    dependencies:
+    - name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 6.1.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.5.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: "6.3"
     description: Install ServiceX deployment - HEP Columnar Data Delivery Service
-    digest: dbf87ff4f4905441cd5c840bbc2dfcc1bd7db0609a410025090d926878d049fe
+    digest: b2d5624c7e36b91b62efc811c8c6082f3b770b72a1d121bd92ae4a735b1c6f01
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-01-15T16:32:58.127221-06:00"
+    dependencies:
+    - name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 6.1.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.5.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: "6.3"
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 2e4663b95c2884178ea6db7e60574267cd1cd5c7edea404b95db9da4444f5e3c
     name: servicex
     urls:
     - https://ssl-hep.github.io/ssl-helm-charts/servicex-0.1.0.tgz
     version: 0.1.0
-generated: "2019-10-06T20:20:30.598795-05:00"
+generated: "2020-01-15T16:32:58.070548-06:00"
