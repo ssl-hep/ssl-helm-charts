@@ -3,7 +3,28 @@ entries:
   servicex:
   - apiVersion: v1
     appVersion: develop
-    created: "2021-02-02T09:31:09.10157-06:00"
+    created: "2021-04-23T09:56:09.736264-05:00"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 810e8327ed3c221b1f9a17c0a41bd5bbd5f32149c899ee9b1e47f18203535adc
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.6.tgz
+    version: 1.0.6
+  - apiVersion: v1
+    appVersion: develop
+    created: "2021-04-23T09:56:09.730018-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -24,7 +45,7 @@ entries:
     version: 1.0.5
   - apiVersion: v1
     appVersion: develop
-    created: "2021-02-02T09:31:09.09082-06:00"
+    created: "2021-04-23T09:56:09.722058-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -45,7 +66,7 @@ entries:
     version: 1.0.4
   - apiVersion: v1
     appVersion: develop
-    created: "2021-02-02T09:31:09.075584-06:00"
+    created: "2021-04-23T09:56:09.712625-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -66,7 +87,7 @@ entries:
     version: 1.0.3
   - apiVersion: v1
     appVersion: develop
-    created: "2021-02-02T09:31:09.060298-06:00"
+    created: "2021-04-23T09:56:09.703979-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -87,7 +108,7 @@ entries:
     version: 1.0.2
   - apiVersion: v1
     appVersion: develop
-    created: "2021-02-02T09:31:09.046748-06:00"
+    created: "2021-04-23T09:56:09.695156-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -107,7 +128,7 @@ entries:
     - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v1
-    created: "2021-02-02T09:31:09.03036-06:00"
+    created: "2021-04-23T09:56:09.68684-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -128,7 +149,7 @@ entries:
     version: 1.0.0-rc.3
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-02-02T09:31:09.014522-06:00"
+    created: "2021-04-23T09:56:09.67901-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -149,7 +170,7 @@ entries:
     version: 1.0.0-rc.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-02-02T09:31:09.000776-06:00"
+    created: "2021-04-23T09:56:09.670489-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -170,7 +191,7 @@ entries:
     version: 0.4.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-02-02T09:31:08.986981-06:00"
+    created: "2021-04-23T09:56:09.66256-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -191,7 +212,7 @@ entries:
     version: 0.3.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-02-02T09:31:08.969533-06:00"
+    created: "2021-04-23T09:56:09.656264-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -212,7 +233,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-02-02T09:31:08.956396-06:00"
+    created: "2021-04-23T09:56:09.647109-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -231,4 +252,4 @@ entries:
     urls:
     - https://ssl-hep.github.io/ssl-helm-charts/servicex-0.1.0.tgz
     version: 0.1.0
-generated: "2021-02-02T09:31:08.937256-06:00"
+generated: "2021-04-23T09:56:09.641698-05:00"
