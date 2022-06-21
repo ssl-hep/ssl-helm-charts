@@ -3,7 +3,7 @@ entries:
   servicex:
   - apiVersion: v1
     appVersion: 20220418-1418-stable
-    created: "2022-04-21T16:54:51.010033-05:00"
+    created: "2022-06-21T13:11:45.566713-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -24,7 +24,7 @@ entries:
     version: 1.0.30
   - apiVersion: v1
     appVersion: 20220323-1932-stable
-    created: "2022-04-21T16:54:51.002322-05:00"
+    created: "2022-06-21T13:11:45.558457-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -45,7 +45,7 @@ entries:
     version: 1.0.30-alpha.1
   - apiVersion: v1
     appVersion: 20220418-1418-stable
-    created: "2022-04-21T16:54:50.993082-05:00"
+    created: "2022-06-21T13:11:45.550833-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -66,7 +66,7 @@ entries:
     version: 1.0.30-RC.3
   - apiVersion: v1
     appVersion: 20220418-1418-stable
-    created: "2022-04-21T16:54:50.983937-05:00"
+    created: "2022-06-21T13:11:45.542389-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -86,29 +86,29 @@ entries:
     - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.30-RC.2.tgz
     version: 1.0.30-RC.2
   - apiVersion: v1
-    appVersion: 20220323-1932-stable
-    created: "2022-04-21T16:54:50.975277-05:00"
+    appVersion: 20220621-1754-stable
+    created: "2022-06-21T13:11:45.5339-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
       version: 8.24.*
     - condition: objectStore.internal, objectStore.enabled
       name: minio
-      repository: https://helm.min.io/
-      version: '>=5.0.32'
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
     - condition: postgres.enabled
       name: postgresql
       repository: https://charts.bitnami.com/bitnami/
       version: 8.3.*
     description: Install ServiceX deployment - HEP Columnar Data Delivery Service
-    digest: 5f07f16861daf05ea3a1cbf46782996467321f073a217e13a6f7cf4b8c139002
+    digest: 19e681a91b420fe41957f7f1b3085bf5c9723f84bd9b4197db1685282ceb13a3
     name: servicex
     urls:
     - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.30-RC.1.tgz
     version: 1.0.30-RC.1
   - apiVersion: v1
     appVersion: 20220323-1932-stable
-    created: "2022-04-21T16:54:50.95409-05:00"
+    created: "2022-06-21T13:11:45.518402-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -129,7 +129,7 @@ entries:
     version: 1.0.29
   - apiVersion: v1
     appVersion: 20220323-1932-stable
-    created: "2022-04-21T16:54:50.943816-05:00"
+    created: "2022-06-21T13:11:45.509634-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -150,7 +150,7 @@ entries:
     version: 1.0.28
   - apiVersion: v1
     appVersion: 20220311-2056-stable
-    created: "2022-04-21T16:54:50.929687-05:00"
+    created: "2022-06-21T13:11:45.500242-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -171,7 +171,7 @@ entries:
     version: 1.0.27
   - apiVersion: v1
     appVersion: 20220309-2035-stable
-    created: "2022-04-21T16:54:50.920569-05:00"
+    created: "2022-06-21T13:11:45.491294-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -192,7 +192,7 @@ entries:
     version: 1.0.25
   - apiVersion: v1
     appVersion: 20220309-1723-stable
-    created: "2022-04-21T16:54:50.91084-05:00"
+    created: "2022-06-21T13:11:45.483366-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -213,7 +213,7 @@ entries:
     version: 1.0.24
   - apiVersion: v1
     appVersion: 20220307-2203-stable
-    created: "2022-04-21T16:54:50.902356-05:00"
+    created: "2022-06-21T13:11:45.475626-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -234,7 +234,7 @@ entries:
     version: 1.0.23
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:50.893239-05:00"
+    created: "2022-06-21T13:11:45.466833-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -255,7 +255,7 @@ entries:
     version: 1.0.22
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:50.885163-05:00"
+    created: "2022-06-21T13:11:45.459342-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -276,7 +276,7 @@ entries:
     version: 1.0.21
   - apiVersion: v1
     appVersion: 1.0.0-rc.4
-    created: "2022-04-21T16:54:50.875455-05:00"
+    created: "2022-06-21T13:11:45.450791-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -297,7 +297,7 @@ entries:
     version: 1.0.20
   - apiVersion: v1
     appVersion: 1.0.0-RC.4
-    created: "2022-04-21T16:54:50.859755-05:00"
+    created: "2022-06-21T13:11:45.434204-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -318,7 +318,7 @@ entries:
     version: 1.0.19
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:50.852979-05:00"
+    created: "2022-06-21T13:11:45.426778-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -339,7 +339,7 @@ entries:
     version: 1.0.19-alpha.1
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:50.8454-05:00"
+    created: "2022-06-21T13:11:45.419147-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -360,7 +360,7 @@ entries:
     version: 1.0.18
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:50.837926-05:00"
+    created: "2022-06-21T13:11:45.412409-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -381,7 +381,7 @@ entries:
     version: 1.0.17
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:50.829256-05:00"
+    created: "2022-06-21T13:11:45.404958-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -402,7 +402,7 @@ entries:
     version: 1.0.16
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:50.820717-05:00"
+    created: "2022-06-21T13:11:45.397991-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -423,7 +423,7 @@ entries:
     version: 1.0.15
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:50.813364-05:00"
+    created: "2022-06-21T13:11:45.391775-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -444,7 +444,7 @@ entries:
     version: 1.0.14
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:50.804467-05:00"
+    created: "2022-06-21T13:11:45.383967-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -465,7 +465,7 @@ entries:
     version: 1.0.13
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:50.796259-05:00"
+    created: "2022-06-21T13:11:45.376122-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -486,7 +486,7 @@ entries:
     version: 1.0.12
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:50.787986-05:00"
+    created: "2022-06-21T13:11:45.368276-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -507,7 +507,7 @@ entries:
     version: 1.0.11
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:50.780893-05:00"
+    created: "2022-06-21T13:11:45.361381-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -528,7 +528,7 @@ entries:
     version: 1.0.10
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:51.08087-05:00"
+    created: "2022-06-21T13:11:45.633444-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -549,7 +549,7 @@ entries:
     version: 1.0.9
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:51.073158-05:00"
+    created: "2022-06-21T13:11:45.625662-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -570,7 +570,7 @@ entries:
     version: 1.0.9-alpha.1
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:51.066214-05:00"
+    created: "2022-06-21T13:11:45.618426-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -591,7 +591,7 @@ entries:
     version: 1.0.8
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:51.058396-05:00"
+    created: "2022-06-21T13:11:45.611434-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -612,7 +612,7 @@ entries:
     version: 1.0.8-0
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:51.051013-05:00"
+    created: "2022-06-21T13:11:45.604177-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -633,7 +633,7 @@ entries:
     version: 1.0.7
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:51.043834-05:00"
+    created: "2022-06-21T13:11:45.597315-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -654,7 +654,7 @@ entries:
     version: 1.0.6
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:51.035539-05:00"
+    created: "2022-06-21T13:11:45.58944-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -675,7 +675,7 @@ entries:
     version: 1.0.6-a
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:51.028135-05:00"
+    created: "2022-06-21T13:11:45.582116-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -696,7 +696,7 @@ entries:
     version: 1.0.5
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:51.019275-05:00"
+    created: "2022-06-21T13:11:45.574783-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -717,7 +717,7 @@ entries:
     version: 1.0.4
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:50.965559-05:00"
+    created: "2022-06-21T13:11:45.527033-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -738,7 +738,7 @@ entries:
     version: 1.0.3
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:50.866523-05:00"
+    created: "2022-06-21T13:11:45.441875-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -759,7 +759,7 @@ entries:
     version: 1.0.2
   - apiVersion: v1
     appVersion: develop
-    created: "2022-04-21T16:54:50.772735-05:00"
+    created: "2022-06-21T13:11:45.352182-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -779,7 +779,7 @@ entries:
     - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v1
-    created: "2022-04-21T16:54:50.76251-05:00"
+    created: "2022-06-21T13:11:45.343158-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -800,7 +800,7 @@ entries:
     version: 1.0.0-rc.3
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2022-04-21T16:54:50.753711-05:00"
+    created: "2022-06-21T13:11:45.333351-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -821,7 +821,7 @@ entries:
     version: 1.0.0-rc.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2022-04-21T16:54:50.74729-05:00"
+    created: "2022-06-21T13:11:45.3267-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -842,7 +842,7 @@ entries:
     version: 0.4.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2022-04-21T16:54:50.738813-05:00"
+    created: "2022-06-21T13:11:45.319602-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -863,7 +863,7 @@ entries:
     version: 0.3.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2022-04-21T16:54:50.732554-05:00"
+    created: "2022-06-21T13:11:45.312336-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -884,7 +884,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2022-04-21T16:54:50.72258-05:00"
+    created: "2022-06-21T13:11:45.305323-05:00"
     dependencies:
     - name: rabbitmq
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -903,4 +903,4 @@ entries:
     urls:
     - https://ssl-hep.github.io/ssl-helm-charts/servicex-0.1.0.tgz
     version: 0.1.0
-generated: "2022-04-21T16:54:50.716417-05:00"
+generated: "2022-06-21T13:11:45.299962-05:00"
