@@ -26,6 +26,7 @@ jobs:
       - name: Run chart-testing (list-changed)
         id: list-changed
         run: |
+          echo "${GITHUB_WORKSPACE} "
           changed=$(ct list-changed --target-branch gh-pages --chart-dirs ${GITHUB_WORKSPACE} servicex)
           if [[ -n "$changed" ]]; then
             echo "::set-output name=changed::true"
