@@ -26,13 +26,13 @@ jobs:
       - name: Run chart-testing (list-changed)
         id: list-changed
         run: |
-          changed=$(ct list-changed --target-branch ${{ github.event.repository.default_branch }} --chart-dirs ${GITHUB_WORKSPACE} servicex)
+          changed=$(ct list-changed --target-branch gh-pages --chart-dirs ${GITHUB_WORKSPACE} servicex)
           if [[ -n "$changed" ]]; then
             echo "::set-output name=changed::true"
           fi
 
       - name: Run chart-testing (lint)
-        run: ct lint --target-branch ${{ github.event.repository.default_branch }}  --chart-dirs ${GITHUB_WORKSPACE} servicex
+        run: ct lint --target-branch gh-pages --chart-dirs ${GITHUB_WORKSPACE} servicex
 
       - name: Create kind cluster
         uses: helm/kind-action@v1.2.0
