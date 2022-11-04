@@ -2,8 +2,36 @@ apiVersion: v1
 entries:
   servicex:
   - apiVersion: v1
+    appVersion: v1.0.34-alpha.4
+    created: "2022-11-04T16:08:18.742994966Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: fffb84ad15a505bfcbeb65c7cc1b180b1deca84d737ac532bcea1893f9271d08
+    maintainers:
+    - name: BenGalewsky
+      url: https://github.com/BenGalewsky
+    - name: sthapa
+      url: https://github.com/sthapa
+    - name: ivukotic
+      url: https://github.com/ivukotic
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-v1.0.34-alpha.4.tgz
+    version: v1.0.34-alpha.4
+  - apiVersion: v1
     appVersion: v1.0.34-alpha.3
-    created: "2022-11-01T20:27:04.311745151Z"
+    created: "2022-11-04T16:08:18.72666294Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -29,4 +57,1564 @@ entries:
     urls:
     - https://ssl-hep.github.io/ssl-helm-charts/servicex-v1.0.34-alpha.3.tgz
     version: v1.0.34-alpha.3
-generated: "2022-11-01T20:27:04.297900478Z"
+  - apiVersion: v1
+    appVersion: v1.0.34-alpha.1
+    created: "2022-11-04T16:08:18.71146595Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 4c8af8951466d5132266d32f62e8d8a22d968d4fcf8765788b61d13415746069
+    maintainers:
+    - name: BenGalewsky
+      url: https://github.com/BenGalewsky
+    - name: sthapa
+      url: https://github.com/sthapa
+    - name: ivukotic
+      url: https://github.com/ivukotic
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-v1.0.34-alpha.1.tgz
+    version: v1.0.34-alpha.1
+  - apiVersion: v1
+    appVersion: v1.0.33-rc.8
+    created: "2022-11-04T16:08:18.695687441Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 5b645f2f5ba9ff7e6755ed57ebdbc88d4d889c9bf843b6c306f370f072d339bd
+    maintainers:
+    - name: BenGalewsky
+      url: https://github.com/BenGalewsky
+    - name: sthapa
+      url: https://github.com/sthapa
+    - name: ivukotic
+      url: https://github.com/ivukotic
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-v1.0.33-rc.8.tgz
+    version: v1.0.33-rc.8
+  - apiVersion: v1
+    appVersion: v1.0.33-rc.7
+    created: "2022-11-04T16:08:18.680865664Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 75ebbfd2725d4f2a6a8cf44d61409bc53f205720cc9da8a7ec8ce13976fffced
+    maintainers:
+    - name: BenGalewsky
+      url: https://github.com/BenGalewsky
+    - name: sthapa
+      url: https://github.com/sthapa
+    - name: ivukotic
+      url: https://github.com/ivukotic
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-v1.0.33-rc.7.tgz
+    version: v1.0.33-rc.7
+  - apiVersion: v1
+    appVersion: v1.0.33-rc.6
+    created: "2022-11-04T16:08:18.664534637Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 56d2ecf20c0ca3e2f1c650893b76fc7eda4a791c273880e211ef02e010651c04
+    maintainers:
+    - name: BenGalewsky
+      url: https://github.com/BenGalewsky
+    - name: sthapa
+      url: https://github.com/sthapa
+    - name: ivukotic
+      url: https://github.com/ivukotic
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-v1.0.33-rc.6.tgz
+    version: v1.0.33-rc.6
+  - apiVersion: v1
+    appVersion: v1.0.33-rc.5
+    created: "2022-11-04T16:08:18.649175942Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 5707c10352587322cf844888b1a576ff48c7ca01edde1519b8fe6e4766ee92f4
+    maintainers:
+    - name: BenGalewsky
+      url: https://github.com/BenGalewsky
+    - name: sthapa
+      url: https://github.com/sthapa
+    - name: ivukotic
+      url: https://github.com/ivukotic
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-v1.0.33-rc.5.tgz
+    version: v1.0.33-rc.5
+  - apiVersion: v1
+    appVersion: v1.0.33-rc.4
+    created: "2022-11-04T16:08:18.631769981Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 212c890cd9b9343d0fed32ea5ff4bf06ad5bf917c21ca2812eb93f42d209e14d
+    maintainers:
+    - name: BenGalewsky
+      url: https://github.com/BenGalewsky
+    - name: sthapa
+      url: https://github.com/sthapa
+    - name: ivukotic
+      url: https://github.com/ivukotic
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-v1.0.33-rc.4.tgz
+    version: v1.0.33-rc.4
+  - apiVersion: v1
+    appVersion: v1.0.33-rc.3
+    created: "2022-11-04T16:08:18.616775098Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: f169492b4a72067fe5536580045fb96c990826d1687790dfb1fa2cca52f4485f
+    maintainers:
+    - name: BenGalewsky
+      url: https://github.com/BenGalewsky
+    - name: sthapa
+      url: https://github.com/sthapa
+    - name: ivukotic
+      url: https://github.com/ivukotic
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-v1.0.33-rc.3.tgz
+    version: v1.0.33-rc.3
+  - apiVersion: v1
+    appVersion: v1.0.33-alpha.13
+    created: "2022-11-04T16:08:18.593669553Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: ae2ef9a32465224fbc791de6965b77ec8d183913cfb1c8fef5ac6068d425511b
+    maintainers:
+    - name: BenGalewsky
+      url: https://github.com/BenGalewsky
+    - name: sthapa
+      url: https://github.com/sthapa
+    - name: ivukotic
+      url: https://github.com/ivukotic
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-v1.0.33-alpha.13.tgz
+    version: v1.0.33-alpha.13
+  - apiVersion: v1
+    appVersion: v1.0.33-alpha.12
+    created: "2022-11-04T16:08:18.578835275Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 8ad567e180e00fd1c1b4e2e890ea796fde0fc18a18f914b8ccfa9793eaadb018
+    maintainers:
+    - name: BenGalewsky
+      url: https://github.com/BenGalewsky
+    - name: sthapa
+      url: https://github.com/sthapa
+    - name: ivukotic
+      url: https://github.com/ivukotic
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-v1.0.33-alpha.12.tgz
+    version: v1.0.33-alpha.12
+  - apiVersion: v1
+    appVersion: 1.0.33-RC.1
+    created: "2022-11-04T16:08:18.479800583Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 5ace883d8c7af561bdc8e19d322ed6bf1fd8ba608736b718f59a7cc2f902e53c
+    maintainers:
+    - name: BenGalewsky
+      url: https://github.com/BenGalewsky
+    - name: sthapa
+      url: https://github.com/sthapa
+    - name: ivukotic
+      url: https://github.com/ivukotic
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.33-RC.1.tgz
+    version: 1.0.33-RC.1
+  - apiVersion: v1
+    appVersion: 20220928-0107-stable
+    created: "2022-11-04T16:08:18.462389221Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 2f90ce7cb9cbefaa9f5c5d0ad38fa4f7be8ca1e6954c64e03dfe37bc7cffb58d
+    maintainers:
+    - name: BenGalewsky
+      url: https://github.com/BenGalewsky
+    - name: sthapa
+      url: https://github.com/sthapa
+    - name: ivukotic
+      url: https://github.com/ivukotic
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.32.tgz
+    version: 1.0.32
+  - apiVersion: v1
+    appVersion: 20220928-0107-stable
+    created: "2022-11-04T16:08:18.445631881Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 903f65f32fc780c8a4b23f7d6ee28bb94fbcbb129caad322352febe778693dfd
+    maintainers:
+    - name: BenGalewsky
+      url: https://github.com/BenGalewsky
+    - name: sthapa
+      url: https://github.com/sthapa
+    - name: ivukotic
+      url: https://github.com/ivukotic
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.32-RC.4.tgz
+    version: 1.0.32-RC.4
+  - apiVersion: v1
+    appVersion: 20220926-1720-stable
+    created: "2022-11-04T16:08:18.429399758Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 8fc8002b97229fa78f929ea33b6d8cf2555dcf805ef3d30532a9a1df0cc85c50
+    maintainers:
+    - name: BenGalewsky
+      url: https://github.com/BenGalewsky
+    - name: sthapa
+      url: https://github.com/sthapa
+    - name: ivukotic
+      url: https://github.com/ivukotic
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.32-RC.3.tgz
+    version: 1.0.32-RC.3
+  - apiVersion: v1
+    appVersion: 20220926-1720-stable
+    created: "2022-11-04T16:08:18.414361773Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 29ee3dee1ae58bb85fc5737b5965f8172ab8aabb23abe86058d8318926968adf
+    maintainers:
+    - name: BenGalewsky
+      url: https://github.com/BenGalewsky
+    - name: sthapa
+      url: https://github.com/sthapa
+    - name: ivukotic
+      url: https://github.com/ivukotic
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.32-RC.2.tgz
+    version: 1.0.32-RC.2
+  - apiVersion: v1
+    appVersion: 20220926-1720-stable
+    created: "2022-11-04T16:08:18.398534363Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 1ba1694312f5f7915f30833bd3390848faf811ed64e5d3457c086ff64091abfd
+    maintainers:
+    - name: BenGalewsky
+      url: https://github.com/BenGalewsky
+    - name: sthapa
+      url: https://github.com/sthapa
+    - name: ivukotic
+      url: https://github.com/ivukotic
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.32-RC.1.tgz
+    version: 1.0.32-RC.1
+  - apiVersion: v1
+    appVersion: 20220831-0243-stable
+    created: "2022-11-04T16:08:18.382283739Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: c421a869fe8c58caf0cfd43fdfcfde2747fc352d3f1d64275f4e420f7a39ab4c
+    maintainers:
+    - name: BenGalewsky
+      url: https://github.com/BenGalewsky
+    - name: sthapa
+      url: https://github.com/sthapa
+    - name: ivukotic
+      url: https://github.com/ivukotic
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.31.tgz
+    version: 1.0.31
+  - apiVersion: v1
+    appVersion: 20220831-0243-stable
+    created: "2022-11-04T16:08:18.238905618Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 53f6666a7936bfea32eb69a3196bc37d25e970229ab2f7b37d5235cb424ec7d7
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.31-RC.10.tgz
+    version: 1.0.31-RC.10
+  - apiVersion: v1
+    appVersion: 20220829-2112-stable
+    created: "2022-11-04T16:08:18.366419628Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 70b097aebfcd5f2d7702aee6f259c0b3d03c5f06bfd431b5b5cbfc8192e19cdc
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.31-RC.9.tgz
+    version: 1.0.31-RC.9
+  - apiVersion: v1
+    appVersion: 20220826-0614-stable
+    created: "2022-11-04T16:08:18.351147036Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 2ba677add50109c94e8499d26c54928fee02af640f4fe28e24f226da1b01e4a8
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.31-RC.8.tgz
+    version: 1.0.31-RC.8
+  - apiVersion: v1
+    appVersion: 20220621-1754-stable
+    created: "2022-11-04T16:08:18.334926813Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 28a0433bd2101b46d3525e50af5e90900b9fd754d2ae3d7f698fa81076fd0fea
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.31-RC.7.tgz
+    version: 1.0.31-RC.7
+  - apiVersion: v1
+    appVersion: 20220621-1754-stable
+    created: "2022-11-04T16:08:18.318737291Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 3170278e76a37bc5885ae9ee79536b8aa6311cbf54997ef11968046dec93de70
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.31-RC.6.tgz
+    version: 1.0.31-RC.6
+  - apiVersion: v1
+    appVersion: 20220621-1754-stable
+    created: "2022-11-04T16:08:18.302832679Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 846c67797153728d372824127aaf13eef21abf4087a269731fce1acbc93b0128
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.31-RC.5.tgz
+    version: 1.0.31-RC.5
+  - apiVersion: v1
+    appVersion: 20220621-1754-stable
+    created: "2022-11-04T16:08:18.286508552Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 1675d642b0e2ae520db82c99ca4d21eb74feadc6691e58fc758f0627888e410d
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.31-RC.4.tgz
+    version: 1.0.31-RC.4
+  - apiVersion: v1
+    appVersion: 20220621-1754-stable
+    created: "2022-11-04T16:08:18.27092525Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 160fb764617af038e461c7a33cafdcb1bf86d3f01c7eed864f6d69e9eef3f542
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.31-RC.3.tgz
+    version: 1.0.31-RC.3
+  - apiVersion: v1
+    appVersion: 20220621-1754-stable
+    created: "2022-11-04T16:08:18.255512253Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.6.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 9e8fb1948c9b7f3edd641117500d963f2cb39cec1e7749b6655e9ba261878239
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.31-RC.2.tgz
+    version: 1.0.31-RC.2
+  - apiVersion: v1
+    appVersion: 20220621-1754-stable
+    created: "2022-11-04T16:08:18.222602592Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: e4adf9f78235d64d93d84e840a3a27d62339b109d1d3fd69f100bfd2498803ff
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.31-RC.1.tgz
+    version: 1.0.31-RC.1
+  - apiVersion: v1
+    appVersion: 20220418-1418-stable
+    created: "2022-11-04T16:08:18.213031884Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: f5821a63aa9bd42b80ab7bcaa93ed49290e55bc7f11c63285f2bf7ace7beba4b
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.30.tgz
+    version: 1.0.30
+  - apiVersion: v1
+    appVersion: 20220323-1932-stable
+    created: "2022-11-04T16:08:18.201870124Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 78cde2dc0b583e321fc91c559e5cca8d9a5a63cde56bfc2f5283b1fe8bf3b0a9
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.30-alpha.1.tgz
+    version: 1.0.30-alpha.1
+  - apiVersion: v1
+    appVersion: 20220418-1418-stable
+    created: "2022-11-04T16:08:18.193200045Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 42cbfe0db08aa5c0aeede1036439bee530eb9c36a3b0e41400abc3edbbf4f1d4
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.30-RC.3.tgz
+    version: 1.0.30-RC.3
+  - apiVersion: v1
+    appVersion: 20220418-1418-stable
+    created: "2022-11-04T16:08:18.182683706Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: ce2f561324932565421fe1895bb9b50e29232c278d37d8ddd2af8b664ad2a6d5
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.30-RC.2.tgz
+    version: 1.0.30-RC.2
+  - apiVersion: v1
+    appVersion: 20220621-1754-stable
+    created: "2022-11-04T16:08:18.172053963Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.2.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 19e681a91b420fe41957f7f1b3085bf5c9723f84bd9b4197db1685282ceb13a3
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.30-RC.1.tgz
+    version: 1.0.30-RC.1
+  - apiVersion: v1
+    appVersion: 20220323-1932-stable
+    created: "2022-11-04T16:08:18.151634605Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: cf083fd871940956697888391171d51bd7ba88d3ebb900f738bcbbde9d5a42f6
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.29.tgz
+    version: 1.0.29
+  - apiVersion: v1
+    appVersion: 20220323-1932-stable
+    created: "2022-11-04T16:08:18.141572481Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: a2d5d1b12d96f32885a82d7e7a6e9b3b30b58367193d3f16ca2b0766221474bf
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.28.tgz
+    version: 1.0.28
+  - apiVersion: v1
+    appVersion: 20220311-2056-stable
+    created: "2022-11-04T16:08:18.129630496Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.24.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 11229515c2cc4c33ad6ab9ebaed3eb2f5f934323fc3f4d05535619f38d36cd5a
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.27.tgz
+    version: 1.0.27
+  - apiVersion: v1
+    appVersion: 20220309-2035-stable
+    created: "2022-11-04T16:08:18.118186127Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 8fce1c6cc751fa19a275a981f4046d59ef4d190b875c8a95ac7cff6d5261917f
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.25.tgz
+    version: 1.0.25
+  - apiVersion: v1
+    appVersion: 20220309-1723-stable
+    created: "2022-11-04T16:08:18.106210441Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 74ab0b31882506f116441b66b4dd376d2b7926c9da1f275e3897b262bb6783f5
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.24.tgz
+    version: 1.0.24
+  - apiVersion: v1
+    appVersion: 20220307-2203-stable
+    created: "2022-11-04T16:08:18.097336355Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 949062b5e4b49eff7c80885fa32e8e58393f0136e8379722873682d4efb0729e
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.23.tgz
+    version: 1.0.23
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:18.086820616Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 946766778bc77ad1c764894af5ebe4b515cda49dcb291854dda584a2f5457351
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.22.tgz
+    version: 1.0.22
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:18.07795043Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 7522a6c160c219498e4e479853cb495d0a41ea0fac9d92eea260ce4f1f2b9c0e
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.21.tgz
+    version: 1.0.21
+  - apiVersion: v1
+    appVersion: 1.0.0-rc.4
+    created: "2022-11-04T16:08:18.066008445Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 9e4d0aec00a982c79deaea7ae3d8bdead70ccbbab4bf37407cc1bc0a968fcb67
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.20.tgz
+    version: 1.0.20
+  - apiVersion: v1
+    appVersion: 1.0.0-RC.4
+    created: "2022-11-04T16:08:18.047179738Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 671f15c0cf5b9b1a9d133cef21b4f4d73f5f6361784a3b37926fd3c372631fd2
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.19.tgz
+    version: 1.0.19
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:18.03792494Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: ee798682fda7ecf2f31b305fbb63cebf488c962c4810a5f1374ae59925b7f6ba
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.19-alpha.1.tgz
+    version: 1.0.19-alpha.1
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:18.029079655Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: bf685ea50c91f80c080f4e6f541a72529423f200ca38624a6d9df998aa1f6edc
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.18.tgz
+    version: 1.0.18
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:18.018050999Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 529e32b11a45c6a942b3d24f7b3e82fc9195920dc171a45a459f91fea7a6947a
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.17.tgz
+    version: 1.0.17
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:18.008427689Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 091810742c212ba672b0cd59fcb1b034ae5d6d94dbec0bfc77c19b991529f35c
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.16.tgz
+    version: 1.0.16
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:17.997114424Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 956238839edcc38509d18fcab466b5b3a8cccf6375201890221f1b0b95aa013b
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.15.tgz
+    version: 1.0.15
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:17.987471414Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: f8118c42042cbefa1fb8b8c4fdd4665882b57a1a868e8aa7bc2eb28f074676e0
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.14.tgz
+    version: 1.0.14
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:17.977987508Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: a38cc2ead5a0c7962ec4c10f7991658cb11bdfb7a327c3642150dac17055e3bc
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.13.tgz
+    version: 1.0.13
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:17.968442Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 4a1084195afd4e72796130695338c5606c3bb03a4c7b98c51bf07807ad560566
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.12.tgz
+    version: 1.0.12
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:17.960134132Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 6deedcd8f880b76d3fc0224a59655305170a8d1569cb3c671aa2be7aa9d6d894
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.11.tgz
+    version: 1.0.11
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:17.948809167Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 369e4ef42fa7e9e7807feab5d81086fdeec860f22663b993ab5b273a7a9b7ac1
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.10.tgz
+    version: 1.0.10
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:18.562179838Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 05b537736ff362182aea7b677db5327df3be9130b1d0c091aad7de012e98153d
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.9.tgz
+    version: 1.0.9
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:18.554209581Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 1c670c404cf9a3cf74da82460bd2a689b17add91babf3d13f8645779a543ec96
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.9-alpha.1.tgz
+    version: 1.0.9-alpha.1
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:18.544780077Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: b827cab2ea08847236edb5b5efd3a87703f8f681ab6669e4d5431c6d7a92347d
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.8.tgz
+    version: 1.0.8
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:18.536909123Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 572a754a45a8e14b929f6734bea05d16bb42f06b647e5832f15d2f33a3a352b8
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.8-0.tgz
+    version: 1.0.8-0
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:18.527882833Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 7818c00958b5f465ca6ecbeb08fd6a960484fe5e7133b3246827bd76e44bbafd
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.7.tgz
+    version: 1.0.7
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:18.519982778Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 07fe2743e2c9b41462cec8fb3a3c455391a4b9fdd05710c40cc8fc9dadb66b2d
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.6.tgz
+    version: 1.0.6
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:18.507986991Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: eb93025f462cfaf3b4e03fe756a626ffff4a5c5f91313a6d76347c5f0d455e85
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.6-a.tgz
+    version: 1.0.6-a
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:18.500008134Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 57555d941833e44ae5369d9147a40e45f133411235b72a9b067f705cfc74cbde
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.5.tgz
+    version: 1.0.5
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:18.489481195Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: bf6ac5f494008026c4160cf58ea9ff45a3252b81001c7bb947752c5dae4eb532
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.4.tgz
+    version: 1.0.4
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:18.16326178Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: '>=5.0.32'
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 9f789d8adaa0f97c1d6c21c1bb4d0296f7828c9508a2795217c1aac02190d925
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:18.057906184Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: 5.0.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: f8e9eeed39ab1acea2ba42078d614df63430c9c3fab399f73acbf12697396ca0
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v1
+    appVersion: develop
+    created: "2022-11-04T16:08:17.940486899Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: 5.0.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 43eced27172fa73b339bc07eb24e24568bdaba48f5eb9bb92138d743fd932667
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v1
+    created: "2022-11-04T16:08:17.929911758Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 7.6.8
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.0.33
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 8.3.4
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: df7d0609e2dbaa3a89d7b4f4ad080209cf7701edaa7be53e76bf5205fffc45e6
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.0-rc.3.tgz
+    version: 1.0.0-rc.3
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-11-04T16:08:17.919009407Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 6.17.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.0.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 7427bc8cc998dfa83b166714b9b018001b206a6154db6534f1d1305f930d289b
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.0-rc.1.tgz
+    version: 1.0.0-rc.1
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-11-04T16:08:17.907176325Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 6.17.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.0.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 5bba4c2c727adc4d94674b98ed63926cf041aa296d8b346a21b0a7b2002d7cdd
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-11-04T16:08:17.898416943Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 6.17.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.0.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 8.3.*
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: a6830db3247c7251eacb400a797b98d63d42981d57a36e7c591194501c88dcf2
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-11-04T16:08:17.890360283Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 6.1.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.5.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: "6.3"
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: b2d5624c7e36b91b62efc811c8c6082f3b770b72a1d121bd92ae4a735b1c6f01
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-11-04T16:08:17.882228121Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 6.1.*
+    - condition: objectStore.enabled
+      name: minio
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.5.*
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: "6.3"
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 2e4663b95c2884178ea6db7e60574267cd1cd5c7edea404b95db9da4444f5e3c
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-11-04T16:08:17.876517537Z"
