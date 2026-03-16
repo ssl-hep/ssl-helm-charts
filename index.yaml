@@ -2,8 +2,36 @@ apiVersion: v1
 entries:
   servicex:
   - apiVersion: v1
+    appVersion: 1.8.2
+    created: "2026-03-16T16:16:56.59228811Z"
+    dependencies:
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.16.2
+    - condition: objectStore.internal, objectStore.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.10.26
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: 11.9.13
+    description: Install ServiceX deployment - HEP Columnar Data Delivery Service
+    digest: 33808439c3ff8c3e2f3471852abfcff7ac723b6c9486c6c3ed22c59da3f9c135
+    maintainers:
+    - name: BenGalewsky
+      url: https://github.com/BenGalewsky
+    - name: sthapa
+      url: https://github.com/sthapa
+    - name: ivukotic
+      url: https://github.com/ivukotic
+    name: servicex
+    urls:
+    - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.8.2.tgz
+    version: 1.8.2
+  - apiVersion: v1
     appVersion: 1.8.2-rc.2
-    created: "2026-03-11T14:11:53.587499853Z"
+    created: "2026-03-16T16:16:56.581523682Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -31,7 +59,7 @@ entries:
     version: 1.8.2-rc.2
   - apiVersion: v1
     appVersion: 1.8.2-rc.1
-    created: "2026-03-11T14:11:53.574024819Z"
+    created: "2026-03-16T16:16:56.570514109Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -59,7 +87,7 @@ entries:
     version: 1.8.2-rc.1
   - apiVersion: v1
     appVersion: 1.8.1
-    created: "2026-03-11T14:11:53.561968705Z"
+    created: "2026-03-16T16:16:56.557950045Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -87,7 +115,7 @@ entries:
     version: 1.8.1
   - apiVersion: v1
     appVersion: 1.8.1-rc.2
-    created: "2026-03-11T14:11:53.551459615Z"
+    created: "2026-03-16T16:16:56.547597047Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -115,7 +143,7 @@ entries:
     version: 1.8.1-rc.2
   - apiVersion: v1
     appVersion: 1.8.1-rc.1
-    created: "2026-03-11T14:11:53.539608962Z"
+    created: "2026-03-16T16:16:56.536135Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -143,7 +171,7 @@ entries:
     version: 1.8.1-rc.1
   - apiVersion: v1
     appVersion: 1.8.0
-    created: "2026-03-11T14:11:53.527186783Z"
+    created: "2026-03-16T16:16:56.523399627Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -171,7 +199,7 @@ entries:
     version: 1.8.0
   - apiVersion: v1
     appVersion: 1.8.0-rc.1
-    created: "2026-03-11T14:11:53.516775346Z"
+    created: "2026-03-16T16:16:56.51268664Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -199,7 +227,7 @@ entries:
     version: 1.8.0-rc.1
   - apiVersion: v1
     appVersion: 1.7.5
-    created: "2026-03-11T14:11:53.504282685Z"
+    created: "2026-03-16T16:16:56.501491669Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -227,7 +255,7 @@ entries:
     version: 1.7.5
   - apiVersion: v1
     appVersion: 1.7.5-rc.2
-    created: "2026-03-11T14:11:53.492933174Z"
+    created: "2026-03-16T16:16:56.490815597Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -255,7 +283,7 @@ entries:
     version: 1.7.5-rc.2
   - apiVersion: v1
     appVersion: 1.7.5-rc.1
-    created: "2026-03-11T14:11:53.482273894Z"
+    created: "2026-03-16T16:16:56.479175641Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -283,7 +311,7 @@ entries:
     version: 1.7.5-rc.1
   - apiVersion: v1
     appVersion: 1.7.4
-    created: "2026-03-11T14:11:53.470589184Z"
+    created: "2026-03-16T16:16:56.469370626Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -311,7 +339,7 @@ entries:
     version: 1.7.4
   - apiVersion: v1
     appVersion: 1.7.4-rc.2
-    created: "2026-03-11T14:11:53.460377069Z"
+    created: "2026-03-16T16:16:56.457645175Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -339,7 +367,7 @@ entries:
     version: 1.7.4-rc.2
   - apiVersion: v1
     appVersion: 1.7.4-rc.1
-    created: "2026-03-11T14:11:53.448138622Z"
+    created: "2026-03-16T16:16:56.447535431Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -367,7 +395,7 @@ entries:
     version: 1.7.4-rc.1
   - apiVersion: v1
     appVersion: 1.7.3
-    created: "2026-03-11T14:11:53.436963296Z"
+    created: "2026-03-16T16:16:56.435811024Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -395,7 +423,7 @@ entries:
     version: 1.7.3
   - apiVersion: v1
     appVersion: 1.7.3-rc.3
-    created: "2026-03-11T14:11:53.426612312Z"
+    created: "2026-03-16T16:16:56.425897947Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -423,7 +451,7 @@ entries:
     version: 1.7.3-rc.3
   - apiVersion: v1
     appVersion: 1.7.3-rc.2
-    created: "2026-03-11T14:11:53.415442051Z"
+    created: "2026-03-16T16:16:56.415296858Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -451,7 +479,7 @@ entries:
     version: 1.7.3-rc.2
   - apiVersion: v1
     appVersion: 1.7.3-rc.1
-    created: "2026-03-11T14:11:53.403370085Z"
+    created: "2026-03-16T16:16:56.403148671Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -479,7 +507,7 @@ entries:
     version: 1.7.3-rc.1
   - apiVersion: v1
     appVersion: 1.7.2-rc.1
-    created: "2026-03-11T14:11:53.392295267Z"
+    created: "2026-03-16T16:16:56.39210422Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -507,7 +535,7 @@ entries:
     version: 1.7.2-rc.1
   - apiVersion: v1
     appVersion: 1.7.1
-    created: "2026-03-11T14:11:53.38199118Z"
+    created: "2026-03-16T16:16:56.382002561Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -535,7 +563,7 @@ entries:
     version: 1.7.1
   - apiVersion: v1
     appVersion: 1.7.1-rc.1
-    created: "2026-03-11T14:11:53.370952803Z"
+    created: "2026-03-16T16:16:56.370297608Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -563,7 +591,7 @@ entries:
     version: 1.7.1-rc.1
   - apiVersion: v1
     appVersion: 1.7.0
-    created: "2026-03-11T14:11:53.358987279Z"
+    created: "2026-03-16T16:16:56.360218301Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -591,7 +619,7 @@ entries:
     version: 1.7.0
   - apiVersion: v1
     appVersion: 1.7.0-rc.4
-    created: "2026-03-11T14:11:53.347817664Z"
+    created: "2026-03-16T16:16:56.349386635Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -619,7 +647,7 @@ entries:
     version: 1.7.0-rc.4
   - apiVersion: v1
     appVersion: 1.7.0-rc.3
-    created: "2026-03-11T14:11:53.33789032Z"
+    created: "2026-03-16T16:16:56.338650713Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -647,7 +675,7 @@ entries:
     version: 1.7.0-rc.3
   - apiVersion: v1
     appVersion: 1.7.0-rc.2
-    created: "2026-03-11T14:11:53.322449279Z"
+    created: "2026-03-16T16:16:56.324116378Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -675,7 +703,7 @@ entries:
     version: 1.7.0-rc.2
   - apiVersion: v1
     appVersion: 1.7.0-rc.1
-    created: "2026-03-11T14:11:53.311229164Z"
+    created: "2026-03-16T16:16:56.312210084Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -703,7 +731,7 @@ entries:
     version: 1.7.0-rc.1
   - apiVersion: v1
     appVersion: 1.6.1
-    created: "2026-03-11T14:11:53.300284932Z"
+    created: "2026-03-16T16:16:56.301195632Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -731,7 +759,7 @@ entries:
     version: 1.6.1
   - apiVersion: v1
     appVersion: 1.6.1-RC.3
-    created: "2026-03-11T14:11:53.289351888Z"
+    created: "2026-03-16T16:16:56.290797122Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -759,7 +787,7 @@ entries:
     version: 1.6.1-RC.3
   - apiVersion: v1
     appVersion: 1.6.1-RC.2
-    created: "2026-03-11T14:11:53.278377032Z"
+    created: "2026-03-16T16:16:56.279519846Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -787,7 +815,7 @@ entries:
     version: 1.6.1-RC.2
   - apiVersion: v1
     appVersion: 1.6.1-RC.1
-    created: "2026-03-11T14:11:53.267239718Z"
+    created: "2026-03-16T16:16:56.268909782Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -815,7 +843,7 @@ entries:
     version: 1.6.1-RC.1
   - apiVersion: v1
     appVersion: 1.6.0
-    created: "2026-03-11T14:11:53.256614884Z"
+    created: "2026-03-16T16:16:56.258108823Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -843,7 +871,7 @@ entries:
     version: 1.6.0
   - apiVersion: v1
     appVersion: 1.6.0-rc.1
-    created: "2026-03-11T14:11:53.245326831Z"
+    created: "2026-03-16T16:16:56.24749295Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -871,7 +899,7 @@ entries:
     version: 1.6.0-rc.1
   - apiVersion: v1
     appVersion: 1.5.6
-    created: "2026-03-11T14:11:53.234292652Z"
+    created: "2026-03-16T16:16:56.237116856Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -899,7 +927,7 @@ entries:
     version: 1.5.6
   - apiVersion: v1
     appVersion: 1.5.5
-    created: "2026-03-11T14:11:53.223842623Z"
+    created: "2026-03-16T16:16:56.224499425Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -927,7 +955,7 @@ entries:
     version: 1.5.5
   - apiVersion: v1
     appVersion: 1.5.5-rc.1
-    created: "2026-03-11T14:11:53.211779343Z"
+    created: "2026-03-16T16:16:56.213792314Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -955,7 +983,7 @@ entries:
     version: 1.5.5-rc.1
   - apiVersion: v1
     appVersion: 1.5.5-beta.1
-    created: "2026-03-11T14:11:53.200552852Z"
+    created: "2026-03-16T16:16:56.204206087Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -983,7 +1011,7 @@ entries:
     version: 1.5.5-beta.1
   - apiVersion: v1
     appVersion: 1.5.5-alpha.3
-    created: "2026-03-11T14:11:53.189422043Z"
+    created: "2026-03-16T16:16:56.19228323Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1011,7 +1039,7 @@ entries:
     version: 1.5.5-alpha.3
   - apiVersion: v1
     appVersion: 1.5.5-alpha.2
-    created: "2026-03-11T14:11:53.178588089Z"
+    created: "2026-03-16T16:16:56.182449711Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1039,7 +1067,7 @@ entries:
     version: 1.5.5-alpha.2
   - apiVersion: v1
     appVersion: 1.5.4
-    created: "2026-03-11T14:11:53.167816677Z"
+    created: "2026-03-16T16:16:56.170622145Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1067,7 +1095,7 @@ entries:
     version: 1.5.4
   - apiVersion: v1
     appVersion: 1.5.4-rc.1
-    created: "2026-03-11T14:11:53.157390285Z"
+    created: "2026-03-16T16:16:56.160055198Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1095,7 +1123,7 @@ entries:
     version: 1.5.4-rc.1
   - apiVersion: v1
     appVersion: 1.5.3
-    created: "2026-03-11T14:11:53.1458011Z"
+    created: "2026-03-16T16:16:56.15002408Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1123,7 +1151,7 @@ entries:
     version: 1.5.3
   - apiVersion: v1
     appVersion: 1.5.2
-    created: "2026-03-11T14:11:53.134827491Z"
+    created: "2026-03-16T16:16:56.13851223Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1151,7 +1179,7 @@ entries:
     version: 1.5.2
   - apiVersion: v1
     appVersion: 1.5.2-post.1
-    created: "2026-03-11T14:11:53.124713208Z"
+    created: "2026-03-16T16:16:56.128787274Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1179,7 +1207,7 @@ entries:
     version: 1.5.2-post.1
   - apiVersion: v1
     appVersion: 1.5.1
-    created: "2026-03-11T14:11:53.112800982Z"
+    created: "2026-03-16T16:16:56.117037628Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1207,7 +1235,7 @@ entries:
     version: 1.5.1
   - apiVersion: v1
     appVersion: 1.5.1-alpha.1
-    created: "2026-03-11T14:11:53.101854384Z"
+    created: "2026-03-16T16:16:56.107083314Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1235,7 +1263,7 @@ entries:
     version: 1.5.1-alpha.1
   - apiVersion: v1
     appVersion: 1.5.0
-    created: "2026-03-11T14:11:53.092116694Z"
+    created: "2026-03-16T16:16:56.096450136Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1263,7 +1291,7 @@ entries:
     version: 1.5.0
   - apiVersion: v1
     appVersion: 1.4.1
-    created: "2026-03-11T14:11:53.080877371Z"
+    created: "2026-03-16T16:16:56.0848603Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1291,7 +1319,7 @@ entries:
     version: 1.4.1
   - apiVersion: v1
     appVersion: 1.4.0
-    created: "2026-03-11T14:11:53.068918288Z"
+    created: "2026-03-16T16:16:56.07503308Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1319,7 +1347,7 @@ entries:
     version: 1.4.0
   - apiVersion: v1
     appVersion: 1.4.0-alpha.6
-    created: "2026-03-11T14:11:53.057932858Z"
+    created: "2026-03-16T16:16:56.063578435Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1347,7 +1375,7 @@ entries:
     version: 1.4.0-alpha.6
   - apiVersion: v1
     appVersion: 1.4.0-alpha.5
-    created: "2026-03-11T14:11:53.048101603Z"
+    created: "2026-03-16T16:16:56.053378535Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1375,7 +1403,7 @@ entries:
     version: 1.4.0-alpha.5
   - apiVersion: v1
     appVersion: 1.4.0-alpha.4
-    created: "2026-03-11T14:11:53.036286987Z"
+    created: "2026-03-16T16:16:56.042946079Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1403,7 +1431,7 @@ entries:
     version: 1.4.0-alpha.4
   - apiVersion: v1
     appVersion: 1.4.0-alpha.3
-    created: "2026-03-11T14:11:53.02627776Z"
+    created: "2026-03-16T16:16:56.031095649Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1431,7 +1459,7 @@ entries:
     version: 1.4.0-alpha.3
   - apiVersion: v1
     appVersion: 1.4.0-alpha.2
-    created: "2026-03-11T14:11:53.014210626Z"
+    created: "2026-03-16T16:16:56.020364703Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1459,7 +1487,7 @@ entries:
     version: 1.4.0-alpha.2
   - apiVersion: v1
     appVersion: 1.4.0-alpha.1
-    created: "2026-03-11T14:11:53.003159816Z"
+    created: "2026-03-16T16:16:56.010033835Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1487,7 +1515,7 @@ entries:
     version: 1.4.0-alpha.1
   - apiVersion: v1
     appVersion: 1.3.2
-    created: "2026-03-11T14:11:52.992133709Z"
+    created: "2026-03-16T16:16:55.99972001Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1515,7 +1543,7 @@ entries:
     version: 1.3.2
   - apiVersion: v1
     appVersion: 1.3.1
-    created: "2026-03-11T14:11:52.981732012Z"
+    created: "2026-03-16T16:16:55.988100083Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1543,7 +1571,7 @@ entries:
     version: 1.3.1
   - apiVersion: v1
     appVersion: 1.3.0
-    created: "2026-03-11T14:11:52.970462551Z"
+    created: "2026-03-16T16:16:55.977502386Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1571,7 +1599,7 @@ entries:
     version: 1.3.0
   - apiVersion: v1
     appVersion: 1.3.0-rc.1
-    created: "2026-03-11T14:11:52.959286827Z"
+    created: "2026-03-16T16:16:55.967581243Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1599,7 +1627,7 @@ entries:
     version: 1.3.0-rc.1
   - apiVersion: v1
     appVersion: 1.2.2
-    created: "2026-03-11T14:11:52.948409503Z"
+    created: "2026-03-16T16:16:55.95626405Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1627,7 +1655,7 @@ entries:
     version: 1.2.2
   - apiVersion: v1
     appVersion: 1.2.1
-    created: "2026-03-11T14:11:52.93807Z"
+    created: "2026-03-16T16:16:55.94639257Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1655,7 +1683,7 @@ entries:
     version: 1.2.1
   - apiVersion: v1
     appVersion: 1.2.1-post.1
-    created: "2026-03-11T14:11:52.926412195Z"
+    created: "2026-03-16T16:16:55.935697481Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1683,7 +1711,7 @@ entries:
     version: 1.2.1-post.1
   - apiVersion: v1
     appVersion: 1.2.1-alpha.1
-    created: "2026-03-11T14:11:52.916417976Z"
+    created: "2026-03-16T16:16:55.923971103Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1711,7 +1739,7 @@ entries:
     version: 1.2.1-alpha.1
   - apiVersion: v1
     appVersion: 1.2.0
-    created: "2026-03-11T14:11:52.905542315Z"
+    created: "2026-03-16T16:16:55.914200212Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1739,7 +1767,7 @@ entries:
     version: 1.2.0
   - apiVersion: v1
     appVersion: 1.1.5-rc.2
-    created: "2026-03-11T14:11:52.893735854Z"
+    created: "2026-03-16T16:16:55.903494022Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1767,7 +1795,7 @@ entries:
     version: 1.1.5-rc.2
   - apiVersion: v1
     appVersion: 1.1.5-rc.1
-    created: "2026-03-11T14:11:52.882896408Z"
+    created: "2026-03-16T16:16:55.891930553Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1795,7 +1823,7 @@ entries:
     version: 1.1.5-rc.1
   - apiVersion: v1
     appVersion: 1.1.5-alpha4
-    created: "2026-03-11T14:11:52.87277412Z"
+    created: "2026-03-16T16:16:55.881468554Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1823,7 +1851,7 @@ entries:
     version: 1.1.5-alpha4
   - apiVersion: v1
     appVersion: 1.1.5-alpha.1
-    created: "2026-03-11T14:11:52.862242819Z"
+    created: "2026-03-16T16:16:55.871641026Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1851,7 +1879,7 @@ entries:
     version: 1.1.5-alpha.1
   - apiVersion: v1
     appVersion: 1.1.4
-    created: "2026-03-11T14:11:52.850160731Z"
+    created: "2026-03-16T16:16:55.859988292Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1879,7 +1907,7 @@ entries:
     version: 1.1.4
   - apiVersion: v1
     appVersion: 1.1.3
-    created: "2026-03-11T14:11:52.840214652Z"
+    created: "2026-03-16T16:16:55.850373841Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1907,7 +1935,7 @@ entries:
     version: 1.1.3
   - apiVersion: v1
     appVersion: 1.1.3-alpha.2
-    created: "2026-03-11T14:11:52.829279991Z"
+    created: "2026-03-16T16:16:55.838757709Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1935,7 +1963,7 @@ entries:
     version: 1.1.3-alpha.2
   - apiVersion: v1
     appVersion: 1.1.3-alpha.1
-    created: "2026-03-11T14:11:52.818309601Z"
+    created: "2026-03-16T16:16:55.828251959Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1963,7 +1991,7 @@ entries:
     version: 1.1.3-alpha.1
   - apiVersion: v1
     appVersion: 1.1.2-alpha.1
-    created: "2026-03-11T14:11:52.807224437Z"
+    created: "2026-03-16T16:16:55.817480958Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -1991,7 +2019,7 @@ entries:
     version: 1.1.2-alpha.1
   - apiVersion: v1
     appVersion: 1.1.1
-    created: "2026-03-11T14:11:52.796872628Z"
+    created: "2026-03-16T16:16:55.80747055Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2019,7 +2047,7 @@ entries:
     version: 1.1.1
   - apiVersion: v1
     appVersion: 1.1.0
-    created: "2026-03-11T14:11:52.786761183Z"
+    created: "2026-03-16T16:16:55.797968492Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2047,7 +2075,7 @@ entries:
     version: 1.1.0
   - apiVersion: v1
     appVersion: 1.1.0-rc.9
-    created: "2026-03-11T14:11:52.776815965Z"
+    created: "2026-03-16T16:16:55.788378228Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2075,7 +2103,7 @@ entries:
     version: 1.1.0-rc.9
   - apiVersion: v1
     appVersion: 1.1.0-rc.8
-    created: "2026-03-11T14:11:52.766651869Z"
+    created: "2026-03-16T16:16:55.777855027Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2103,7 +2131,7 @@ entries:
     version: 1.1.0-rc.8
   - apiVersion: v1
     appVersion: 1.1.0-rc.6
-    created: "2026-03-11T14:11:52.756570235Z"
+    created: "2026-03-16T16:16:55.76777065Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2131,7 +2159,7 @@ entries:
     version: 1.1.0-rc.6
   - apiVersion: v1
     appVersion: 1.1.0-rc.5
-    created: "2026-03-11T14:11:52.7464003Z"
+    created: "2026-03-16T16:16:55.757808687Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2159,7 +2187,7 @@ entries:
     version: 1.1.0-rc.5
   - apiVersion: v1
     appVersion: 1.1.0-rc.4
-    created: "2026-03-11T14:11:52.737165539Z"
+    created: "2026-03-16T16:16:55.747658876Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2187,7 +2215,7 @@ entries:
     version: 1.1.0-rc.4
   - apiVersion: v1
     appVersion: 1.1.0-rc.3
-    created: "2026-03-11T14:11:52.726936469Z"
+    created: "2026-03-16T16:16:55.737833222Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2215,7 +2243,7 @@ entries:
     version: 1.1.0-rc.3
   - apiVersion: v1
     appVersion: 1.1.0-rc.1
-    created: "2026-03-11T14:11:52.716604981Z"
+    created: "2026-03-16T16:16:55.727969941Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2243,7 +2271,7 @@ entries:
     version: 1.1.0-rc.1
   - apiVersion: v1
     appVersion: 1.1.0-alpha.2
-    created: "2026-03-11T14:11:52.706257656Z"
+    created: "2026-03-16T16:16:55.717795902Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2271,7 +2299,7 @@ entries:
     version: 1.1.0-alpha.2
   - apiVersion: v1
     appVersion: 1.1.0-alpha.1
-    created: "2026-03-11T14:11:52.696119586Z"
+    created: "2026-03-16T16:16:55.707918561Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2299,7 +2327,7 @@ entries:
     version: 1.1.0-alpha.1
   - apiVersion: v1
     appVersion: 1.0.35-alpha.2
-    created: "2026-03-11T14:11:52.633502775Z"
+    created: "2026-03-16T16:16:55.645787842Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2327,7 +2355,7 @@ entries:
     version: 1.0.35-alpha.2
   - apiVersion: v1
     appVersion: 1.0.35-alpha.1
-    created: "2026-03-11T14:11:52.623393594Z"
+    created: "2026-03-16T16:16:55.635660946Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2355,7 +2383,7 @@ entries:
     version: 1.0.35-alpha.1
   - apiVersion: v1
     appVersion: 1.0.34
-    created: "2026-03-11T14:11:52.6132159Z"
+    created: "2026-03-16T16:16:55.625446921Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2383,7 +2411,7 @@ entries:
     version: 1.0.34
   - apiVersion: v1
     appVersion: 1.0.34-alpha.5
-    created: "2026-03-11T14:11:52.603059341Z"
+    created: "2026-03-16T16:16:55.615279785Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2411,7 +2439,7 @@ entries:
     version: 1.0.34-alpha.5
   - apiVersion: v1
     appVersion: v1.0.34-alpha.4
-    created: "2026-03-11T14:11:53.697835549Z"
+    created: "2026-03-16T16:16:56.700609134Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2439,7 +2467,7 @@ entries:
     version: v1.0.34-alpha.4
   - apiVersion: v1
     appVersion: v1.0.34-alpha.3
-    created: "2026-03-11T14:11:53.687513465Z"
+    created: "2026-03-16T16:16:56.6907552Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2467,7 +2495,7 @@ entries:
     version: v1.0.34-alpha.3
   - apiVersion: v1
     appVersion: v1.0.34-alpha.1
-    created: "2026-03-11T14:11:53.677328823Z"
+    created: "2026-03-16T16:16:56.681046522Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2495,7 +2523,7 @@ entries:
     version: v1.0.34-alpha.1
   - apiVersion: v1
     appVersion: v1.0.33-rc.8
-    created: "2026-03-11T14:11:53.667151511Z"
+    created: "2026-03-16T16:16:56.671159796Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2523,7 +2551,7 @@ entries:
     version: v1.0.33-rc.8
   - apiVersion: v1
     appVersion: v1.0.33-rc.7
-    created: "2026-03-11T14:11:53.658052822Z"
+    created: "2026-03-16T16:16:56.662163499Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2551,7 +2579,7 @@ entries:
     version: v1.0.33-rc.7
   - apiVersion: v1
     appVersion: v1.0.33-rc.6
-    created: "2026-03-11T14:11:53.64775112Z"
+    created: "2026-03-16T16:16:56.651889046Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2579,7 +2607,7 @@ entries:
     version: v1.0.33-rc.6
   - apiVersion: v1
     appVersion: v1.0.33-rc.5
-    created: "2026-03-11T14:11:53.637277216Z"
+    created: "2026-03-16T16:16:56.64162288Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2607,7 +2635,7 @@ entries:
     version: v1.0.33-rc.5
   - apiVersion: v1
     appVersion: v1.0.33-rc.4
-    created: "2026-03-11T14:11:53.627063587Z"
+    created: "2026-03-16T16:16:56.631541541Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2635,7 +2663,7 @@ entries:
     version: v1.0.33-rc.4
   - apiVersion: v1
     appVersion: v1.0.33-rc.3
-    created: "2026-03-11T14:11:53.616951872Z"
+    created: "2026-03-16T16:16:56.621603818Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2663,7 +2691,7 @@ entries:
     version: v1.0.33-rc.3
   - apiVersion: v1
     appVersion: v1.0.33-alpha.13
-    created: "2026-03-11T14:11:53.6068055Z"
+    created: "2026-03-16T16:16:56.611838978Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2691,7 +2719,7 @@ entries:
     version: v1.0.33-alpha.13
   - apiVersion: v1
     appVersion: v1.0.33-alpha.12
-    created: "2026-03-11T14:11:53.596692116Z"
+    created: "2026-03-16T16:16:56.60213288Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2719,7 +2747,7 @@ entries:
     version: v1.0.33-alpha.12
   - apiVersion: v1
     appVersion: 1.0.33-RC.1
-    created: "2026-03-11T14:11:52.593116936Z"
+    created: "2026-03-16T16:16:55.604537986Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2747,7 +2775,7 @@ entries:
     version: 1.0.33-RC.1
   - apiVersion: v1
     appVersion: 20220928-0107-stable
-    created: "2026-03-11T14:11:52.582914331Z"
+    created: "2026-03-16T16:16:55.594359063Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2775,7 +2803,7 @@ entries:
     version: 1.0.32
   - apiVersion: v1
     appVersion: 20220928-0107-stable
-    created: "2026-03-11T14:11:52.572861189Z"
+    created: "2026-03-16T16:16:55.584355086Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2803,7 +2831,7 @@ entries:
     version: 1.0.32-RC.4
   - apiVersion: v1
     appVersion: 20220926-1720-stable
-    created: "2026-03-11T14:11:52.562655799Z"
+    created: "2026-03-16T16:16:55.574339325Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2831,7 +2859,7 @@ entries:
     version: 1.0.32-RC.3
   - apiVersion: v1
     appVersion: 20220926-1720-stable
-    created: "2026-03-11T14:11:52.553145293Z"
+    created: "2026-03-16T16:16:55.564230751Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2859,7 +2887,7 @@ entries:
     version: 1.0.32-RC.2
   - apiVersion: v1
     appVersion: 20220926-1720-stable
-    created: "2026-03-11T14:11:52.542754244Z"
+    created: "2026-03-16T16:16:55.555042587Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2887,7 +2915,7 @@ entries:
     version: 1.0.32-RC.1
   - apiVersion: v1
     appVersion: 20220831-0243-stable
-    created: "2026-03-11T14:11:52.532227448Z"
+    created: "2026-03-16T16:16:55.544929699Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2915,7 +2943,7 @@ entries:
     version: 1.0.31
   - apiVersion: v1
     appVersion: 20220831-0243-stable
-    created: "2026-03-11T14:11:52.442390986Z"
+    created: "2026-03-16T16:16:55.456888499Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2936,7 +2964,7 @@ entries:
     version: 1.0.31-RC.10
   - apiVersion: v1
     appVersion: 20220829-2112-stable
-    created: "2026-03-11T14:11:52.521762361Z"
+    created: "2026-03-16T16:16:55.533851646Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2957,7 +2985,7 @@ entries:
     version: 1.0.31-RC.9
   - apiVersion: v1
     appVersion: 20220826-0614-stable
-    created: "2026-03-11T14:11:52.511484145Z"
+    created: "2026-03-16T16:16:55.523944643Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2978,7 +3006,7 @@ entries:
     version: 1.0.31-RC.8
   - apiVersion: v1
     appVersion: 20220621-1754-stable
-    created: "2026-03-11T14:11:52.501365544Z"
+    created: "2026-03-16T16:16:55.514345739Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -2999,7 +3027,7 @@ entries:
     version: 1.0.31-RC.7
   - apiVersion: v1
     appVersion: 20220621-1754-stable
-    created: "2026-03-11T14:11:52.491146863Z"
+    created: "2026-03-16T16:16:55.504725001Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3020,7 +3048,7 @@ entries:
     version: 1.0.31-RC.6
   - apiVersion: v1
     appVersion: 20220621-1754-stable
-    created: "2026-03-11T14:11:52.481242484Z"
+    created: "2026-03-16T16:16:55.494526841Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3041,7 +3069,7 @@ entries:
     version: 1.0.31-RC.5
   - apiVersion: v1
     appVersion: 20220621-1754-stable
-    created: "2026-03-11T14:11:52.472169785Z"
+    created: "2026-03-16T16:16:55.484834326Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3062,7 +3090,7 @@ entries:
     version: 1.0.31-RC.4
   - apiVersion: v1
     appVersion: 20220621-1754-stable
-    created: "2026-03-11T14:11:52.462489893Z"
+    created: "2026-03-16T16:16:55.475315234Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3083,7 +3111,7 @@ entries:
     version: 1.0.31-RC.3
   - apiVersion: v1
     appVersion: 20220621-1754-stable
-    created: "2026-03-11T14:11:52.45243486Z"
+    created: "2026-03-16T16:16:55.465727885Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3104,7 +3132,7 @@ entries:
     version: 1.0.31-RC.2
   - apiVersion: v1
     appVersion: 20220621-1754-stable
-    created: "2026-03-11T14:11:52.432173932Z"
+    created: "2026-03-16T16:16:55.447352466Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3125,7 +3153,7 @@ entries:
     version: 1.0.31-RC.1
   - apiVersion: v1
     appVersion: 20220418-1418-stable
-    created: "2026-03-11T14:11:52.426406911Z"
+    created: "2026-03-16T16:16:55.440510234Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3146,7 +3174,7 @@ entries:
     version: 1.0.30
   - apiVersion: v1
     appVersion: 20220323-1932-stable
-    created: "2026-03-11T14:11:52.419559423Z"
+    created: "2026-03-16T16:16:55.434119065Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3167,7 +3195,7 @@ entries:
     version: 1.0.30-alpha.1
   - apiVersion: v1
     appVersion: 20220418-1418-stable
-    created: "2026-03-11T14:11:52.412934815Z"
+    created: "2026-03-16T16:16:55.428436472Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3188,7 +3216,7 @@ entries:
     version: 1.0.30-RC.3
   - apiVersion: v1
     appVersion: 20220418-1418-stable
-    created: "2026-03-11T14:11:52.407173514Z"
+    created: "2026-03-16T16:16:55.421887996Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3209,7 +3237,7 @@ entries:
     version: 1.0.30-RC.2
   - apiVersion: v1
     appVersion: 20220621-1754-stable
-    created: "2026-03-11T14:11:52.400345411Z"
+    created: "2026-03-16T16:16:55.416314967Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3230,7 +3258,7 @@ entries:
     version: 1.0.30-RC.1
   - apiVersion: v1
     appVersion: 20220323-1932-stable
-    created: "2026-03-11T14:11:52.387999015Z"
+    created: "2026-03-16T16:16:55.403099047Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3251,7 +3279,7 @@ entries:
     version: 1.0.29
   - apiVersion: v1
     appVersion: 20220323-1932-stable
-    created: "2026-03-11T14:11:52.381329097Z"
+    created: "2026-03-16T16:16:55.397636134Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3272,7 +3300,7 @@ entries:
     version: 1.0.28
   - apiVersion: v1
     appVersion: 20220311-2056-stable
-    created: "2026-03-11T14:11:52.372952356Z"
+    created: "2026-03-16T16:16:55.389496723Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3293,7 +3321,7 @@ entries:
     version: 1.0.27
   - apiVersion: v1
     appVersion: 20220309-2035-stable
-    created: "2026-03-11T14:11:52.367210021Z"
+    created: "2026-03-16T16:16:55.382924934Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3314,7 +3342,7 @@ entries:
     version: 1.0.25
   - apiVersion: v1
     appVersion: 20220309-1723-stable
-    created: "2026-03-11T14:11:52.360420775Z"
+    created: "2026-03-16T16:16:55.377361804Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3335,7 +3363,7 @@ entries:
     version: 1.0.24
   - apiVersion: v1
     appVersion: 20220307-2203-stable
-    created: "2026-03-11T14:11:52.354656609Z"
+    created: "2026-03-16T16:16:55.370850781Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3356,7 +3384,7 @@ entries:
     version: 1.0.23
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.347737586Z"
+    created: "2026-03-16T16:16:55.36419933Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3377,7 +3405,7 @@ entries:
     version: 1.0.22
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.341132774Z"
+    created: "2026-03-16T16:16:55.358484828Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3398,7 +3426,7 @@ entries:
     version: 1.0.21
   - apiVersion: v1
     appVersion: 1.0.0-rc.4
-    created: "2026-03-11T14:11:52.335308626Z"
+    created: "2026-03-16T16:16:55.351958012Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3419,7 +3447,7 @@ entries:
     version: 1.0.20
   - apiVersion: v1
     appVersion: 1.0.0-RC.4
-    created: "2026-03-11T14:11:52.32359529Z"
+    created: "2026-03-16T16:16:55.340268397Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3440,7 +3468,7 @@ entries:
     version: 1.0.19
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.31742847Z"
+    created: "2026-03-16T16:16:55.334412413Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3461,7 +3489,7 @@ entries:
     version: 1.0.19-alpha.1
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.310967755Z"
+    created: "2026-03-16T16:16:55.328553481Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3482,7 +3510,7 @@ entries:
     version: 1.0.18
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.305765958Z"
+    created: "2026-03-16T16:16:55.322620245Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3503,7 +3531,7 @@ entries:
     version: 1.0.17
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.299683511Z"
+    created: "2026-03-16T16:16:55.317551237Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3524,7 +3552,7 @@ entries:
     version: 1.0.16
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.29444692Z"
+    created: "2026-03-16T16:16:55.311494297Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3545,7 +3573,7 @@ entries:
     version: 1.0.15
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.288338873Z"
+    created: "2026-03-16T16:16:55.305153408Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3566,7 +3594,7 @@ entries:
     version: 1.0.14
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.283107671Z"
+    created: "2026-03-16T16:16:55.299400073Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3587,7 +3615,7 @@ entries:
     version: 1.0.13
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.276900799Z"
+    created: "2026-03-16T16:16:55.291689631Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3608,7 +3636,7 @@ entries:
     version: 1.0.12
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.271495743Z"
+    created: "2026-03-16T16:16:55.286396424Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3629,7 +3657,7 @@ entries:
     version: 1.0.11
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.26516979Z"
+    created: "2026-03-16T16:16:55.280237833Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3650,7 +3678,7 @@ entries:
     version: 1.0.10
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.685965508Z"
+    created: "2026-03-16T16:16:55.697869583Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3671,7 +3699,7 @@ entries:
     version: 1.0.9
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.680705103Z"
+    created: "2026-03-16T16:16:55.692735183Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3692,7 +3720,7 @@ entries:
     version: 1.0.9-alpha.1
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.674724796Z"
+    created: "2026-03-16T16:16:55.686693462Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3713,7 +3741,7 @@ entries:
     version: 1.0.8
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.669545872Z"
+    created: "2026-03-16T16:16:55.681618512Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3734,7 +3762,7 @@ entries:
     version: 1.0.8-0
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.663187165Z"
+    created: "2026-03-16T16:16:55.67571398Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3755,7 +3783,7 @@ entries:
     version: 1.0.7
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.657909627Z"
+    created: "2026-03-16T16:16:55.67068162Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3776,7 +3804,7 @@ entries:
     version: 1.0.6
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.651661321Z"
+    created: "2026-03-16T16:16:55.6642528Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3797,7 +3825,7 @@ entries:
     version: 1.0.6-a
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.645519177Z"
+    created: "2026-03-16T16:16:55.659190143Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3818,7 +3846,7 @@ entries:
     version: 1.0.5
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.639998515Z"
+    created: "2026-03-16T16:16:55.652386107Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3839,7 +3867,7 @@ entries:
     version: 1.0.4
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.393645882Z"
+    created: "2026-03-16T16:16:55.409612758Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3860,7 +3888,7 @@ entries:
     version: 1.0.3
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.329110802Z"
+    created: "2026-03-16T16:16:55.346822039Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3881,7 +3909,7 @@ entries:
     version: 1.0.2
   - apiVersion: v1
     appVersion: develop
-    created: "2026-03-11T14:11:52.26004656Z"
+    created: "2026-03-16T16:16:55.274906184Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3901,7 +3929,7 @@ entries:
     - https://ssl-hep.github.io/ssl-helm-charts/servicex-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v1
-    created: "2026-03-11T14:11:52.253325076Z"
+    created: "2026-03-16T16:16:55.266521942Z"
     dependencies:
     - name: rabbitmq
       repository: https://charts.bitnami.com/bitnami/
@@ -3922,7 +3950,7 @@ entries:
     version: 1.0.0-rc.3
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-03-11T14:11:52.247032827Z"
+    created: "2026-03-16T16:16:55.258221474Z"
     dependencies:
     - name: rabbitmq
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -3943,7 +3971,7 @@ entries:
     version: 1.0.0-rc.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-03-11T14:11:52.242426452Z"
+    created: "2026-03-16T16:16:55.251437816Z"
     dependencies:
     - name: rabbitmq
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -3964,7 +3992,7 @@ entries:
     version: 0.4.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-03-11T14:11:52.236841878Z"
+    created: "2026-03-16T16:16:55.243943432Z"
     dependencies:
     - name: rabbitmq
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -3985,7 +4013,7 @@ entries:
     version: 0.3.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-03-11T14:11:52.232079362Z"
+    created: "2026-03-16T16:16:55.236914517Z"
     dependencies:
     - name: rabbitmq
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -4006,7 +4034,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-03-11T14:11:52.22715222Z"
+    created: "2026-03-16T16:16:55.230865287Z"
     dependencies:
     - name: rabbitmq
       repository: https://kubernetes-charts.storage.googleapis.com/
@@ -4025,4 +4053,4 @@ entries:
     urls:
     - https://ssl-hep.github.io/ssl-helm-charts/servicex-0.1.0.tgz
     version: 0.1.0
-generated: "2026-03-11T14:11:52.223386964Z"
+generated: "2026-03-16T16:16:55.227033408Z"
